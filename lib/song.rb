@@ -34,7 +34,7 @@ attr_accessor :name, :artist, :genre
         # self.genres - is a unique array of genres
 
         genre_hash = {}
-
+        #this iterates over the non unique array and gets the genres. thennn it gets the count of how many are in that genre. thennn it moves on to the next genre and does the same thing. nd then returns it
         self.genres.each do |genre| 
             genre_hash[genre] = @@genres.count {|g| g == genre} 
         end        
@@ -42,8 +42,8 @@ attr_accessor :name, :artist, :genre
     end
 
     def self.artist_count
-        # @@artists - non unique array of genres
-        # self.artists - is a unique array of genres
+        # @@artists - non unique array of artist
+        # self.artists - is a unique array of artist
 
         artist_hash = {}
 
