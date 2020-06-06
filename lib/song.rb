@@ -51,37 +51,37 @@ class Song
     
     def self.genre_count # => {"rap" => 5, "rock" => 1, "country" => 3}
         
-        new_hash = {}
+        count_array = {}
 
         @@genres.each do |genre|
 
-            if new_hash.key?(genre)
-                new_hash[genre] += 1
+            if count_array.key?(genre)
+                count_array[genre] += 1
             else
-                new_hash[genre] = 1
+                count_array[genre] = 1
             end
 
         end
 
-        new_hash
+        count_array
 
     end
 
     def self.artist_count    # => {"Beyonce" => 17, "Jay-Z" => 40}
                 
-        new_hash = {}
+        count_array = {}
 
         @@artists.each do |artist|
 
-            if new_hash.key?(artist)
-                new_hash[artist] += 1
+            if count_array.key?(artist)
+                count_array[artist] += 1
             else
-                new_hash[artist] = 1
+                count_array[artist] = 1
             end
 
         end
 
-        new_hash
+        count_array
 
     end
 
